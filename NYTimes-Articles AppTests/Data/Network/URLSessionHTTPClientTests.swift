@@ -24,7 +24,6 @@ final class URLSessionHTTPClientTests: XCTestCase {
         super.tearDown()
     }
     
-    // MARK: - Tests
     func test_get_performsGETRequestWithURL() {
         let endpoint = Endpoint.article(period: "7")
         let exp = expectation(description: "Wait for request")

@@ -29,6 +29,16 @@
 		AD1B31FE2DD8833A00518B8D /* NYTimes-Articles AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYTimes-Articles AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AD9C29D82DD90B9400EA54A0 /* Exceptions for "NYTimes-Articles AppTests" folder in "NYTimes-Articles App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Mocks/MockFactory.swift,
+			);
+			target = AD1B31E32DD8833800518B8D /* NYTimes-Articles App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AD1B31E62DD8833800518B8D /* NYTimes-Articles App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -37,6 +47,9 @@
 		};
 		AD1B31F72DD8833A00518B8D /* NYTimes-Articles AppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AD9C29D82DD90B9400EA54A0 /* Exceptions for "NYTimes-Articles AppTests" folder in "NYTimes-Articles App" target */,
+			);
 			path = "NYTimes-Articles AppTests";
 			sourceTree = "<group>";
 		};
@@ -395,7 +408,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NYTimes-Articles App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NYTimes-Articles App/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -423,7 +436,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NYTimes-Articles App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NYTimes-Articles App/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
