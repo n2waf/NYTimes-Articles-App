@@ -8,11 +8,11 @@
 import Foundation
 
 
-struct NYTResponse: Decodable {
+struct NYTResponse: Codable {
     let results: [Article]
 }
 
-struct Article: Decodable, Equatable {
+struct Article: Codable, Equatable {
     let uri: String
     let url: String
     let id: Int
@@ -32,7 +32,7 @@ struct Article: Decodable, Equatable {
     }
 }
 
-struct Media: Decodable, Equatable {
+struct Media: Codable, Equatable {
     let type: String
     let subtype: String
     let mediaMetadata: [MediaMetadata]
@@ -43,7 +43,7 @@ struct Media: Decodable, Equatable {
     }
 }
 
-struct MediaMetadata: Decodable, Equatable {
+struct MediaMetadata: Codable, Equatable {
     let url: String
     let format: String
     let height: Int
