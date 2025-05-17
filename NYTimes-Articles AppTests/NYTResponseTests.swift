@@ -17,4 +17,9 @@ final class NYTResponseTests: XCTestCase {
         XCTAssertFalse(response.results.isEmpty)
         XCTAssertEqual(response.results.first?.id, 1234567890)
     }
+    
+    func test_decode_invalidData_fails() throws {
+        let data = try MockFactory.loadJSON(named: "invalid_structure")
+        XCTAssertThrowsError(try JSONDecoder().decode(NYTResponse.self, from: data))
+    }
 }
