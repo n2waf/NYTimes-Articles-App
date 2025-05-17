@@ -26,6 +26,8 @@ struct ArticlesListView: View {
                 }
             }
             .navigationTitle("NYTimes Articles")
+        }.onAppear {
+            viewModel.loadArticles()
         }
     }
     

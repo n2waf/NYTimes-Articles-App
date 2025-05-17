@@ -23,6 +23,7 @@ class ArticlesListViewModel: ObservableObject {
         $selectedPeriod
             .dropFirst()
             .sink { [weak self] _ in
+                self?.articles = []
                 self?.loadArticles()
             }
             .store(in: &cancellables)
