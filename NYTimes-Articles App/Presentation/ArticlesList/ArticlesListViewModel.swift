@@ -26,7 +26,6 @@ class ArticlesListViewModel: ObservableObject {
                 self?.loadArticles()
             }
             .store(in: &cancellables)
-        loadArticles()
     }
     
     func loadArticles() {
