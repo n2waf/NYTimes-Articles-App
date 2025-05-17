@@ -9,6 +9,15 @@ import Foundation
 @testable import NYTimes_Articles_App
 
 enum MockFactory {
+    
+    static func loadJSON(named name: String) throws -> Data {
+        let bundle = Bundle(for: MockFactoryToken.self)
+        guard let url = bundle.url(forResource: name, withExtension: "json") else {
+            throw NSError(domain: "Missing file: \(name).json", code: -1)
+        }
+        return try Data(contentsOf: url)
+    }
+    
     static var sampleMediaMetadata: MediaMetadata {
         MediaMetadata(
             url: "https://example.com/thumb.jpg",
@@ -54,3 +63,5 @@ enum MockFactory {
         "{}".data(using: .utf8)!
     }
 }
+
+private final class MockFactoryToken {}
