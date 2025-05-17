@@ -10,14 +10,6 @@ import Foundation
 
 enum MockFactory {
     
-    static func loadJSON(_ file: MockJSONFile) throws -> Data {
-        let bundle = Bundle(for: MockFactoryToken.self)
-        guard let url = bundle.url(forResource: file.rawValue, withExtension: "json") else {
-            throw NSError(domain: "Missing file: \(file.rawValue).json", code: -1)
-        }
-        return try Data(contentsOf: url)
-    }
-    
     static var sampleMediaMetadata: MediaMetadata {
         MediaMetadata(
             url: "https://example.com/thumb.jpg",
@@ -63,5 +55,3 @@ enum MockFactory {
         "{}".data(using: .utf8)!
     }
 }
-
-private final class MockFactoryToken {}
