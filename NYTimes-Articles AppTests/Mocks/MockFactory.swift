@@ -50,8 +50,4 @@ enum MockFactory {
     static var validArticleData: Data {
         try! JSONEncoder().encode(sampleResponse)
     }
-
-    static var invalidArticleData: Data {
-        "{}".data(using: .utf8)!
-    }
 }
