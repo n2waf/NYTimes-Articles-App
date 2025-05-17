@@ -13,7 +13,7 @@ enum Endpoint {
     var path: String {
         switch self {
         case .article(let period):
-            return "svc/mostpopular/v2/viewed/\(period).json"
+            return "/svc/mostpopular/v2/viewed/\(period).json"
         }
     }
 }
