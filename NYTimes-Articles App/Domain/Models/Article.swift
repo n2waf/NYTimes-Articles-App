@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct NYTResponse: Codable {
     let results: [Article]
 }
