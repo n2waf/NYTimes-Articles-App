@@ -1,0 +1,128 @@
+{
+  "status": "DUMMY_STATUS",
+  "copyright": "Dummy Copyright Text",
+  "num_results": 2,
+  "results": [
+    {
+      "uri": "dummy://article/uuid-1",
+      "url": "https://example.com/article-1",
+      "id": 1234567890,
+      "asset_id": 1234567890,
+      "source": "Dummy Source",
+      "published_date": "2025-01-01",
+      "updated": "2025-01-01 12:00:00",
+      "section": "Dummy Section",
+      "subsection": "Dummy Subsection",
+      "nytdsection": "dummy_section",
+      "adx_keywords": "Keyword1;Keyword2;Keyword3",
+      "column": null,
+      "byline": "By Author",
+      "type": "Article",
+      "title": "Title",
+      "abstract": "Description or summary goes here.",
+      "des_facet": [
+        "Topic A",
+        "Topic B"
+      ],
+      "org_facet": [
+        "Organization A"
+      ],
+      "per_facet": [
+        "Person A",
+        "Person B"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dummy caption",
+          "copyright": "Dummy Photographer",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://example.com/image1-thumb.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://example.com/image1-medium.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://example.com/image1-large.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "dummy://article/uuid-2",
+      "url": "https://example.com/article-2",
+      "id": 9876543210,
+      "asset_id": 9876543210,
+      "source": "Dummy Source",
+      "published_date": "2025-01-02",
+      "updated": "2025-01-02 08:30:00",
+      "section": "Dummy Section",
+      "subsection": "Dummy Subsection",
+      "nytdsection": "dummy_section",
+      "adx_keywords": "KeywordA;KeywordB;KeywordC",
+      "column": null,
+      "byline": "By Another Author",
+      "type": "Article",
+      "title": "Another Title",
+      "abstract": "Another description goes here.",
+      "des_facet": [
+        "Topic X",
+        "Topic Y"
+      ],
+      "org_facet": [
+        "Organization X",
+        "Organization Y"
+      ],
+      "per_facet": [
+        "Person X",
+        "Person Y"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Another dummy caption",
+          "copyright": "Another Dummy Photographer",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://example.com/image2-thumb.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://example.com/image2-medium.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://example.com/image2-large.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    }
+  ]
+}
