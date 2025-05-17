@@ -22,4 +22,10 @@ final class NYTResponseTests: XCTestCase {
         let data = try MockFactory.loadJSON(named: "invalid_structure")
         XCTAssertThrowsError(try JSONDecoder().decode(NYTResponse.self, from: data))
     }
+    
+    func test_decode_emptyResults_succeeds() throws {
+        let data = try MockFactory.loadJSON(named: "empty_results")
+        let response = try JSONDecoder().decode(NYTResponse.self, from: data)
+        XCTAssertTrue(response.results.isEmpty)
+    }
 }
