@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct NYTimes_Articles_AppApp: App {
+    
+    private let container = DependencyContainer()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArticlesListView(viewModel: container.makeArticlesListViewModel())
         }
     }
 }
-// Resources
