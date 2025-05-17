@@ -11,7 +11,7 @@ import XCTest
 
 final class NYTResponseTests: XCTestCase {
     func test_decode_validData_succeeds() throws {
-        let data = try MockFactory.loadJSON(named: "article_response")
+        let data = try MockFactory.loadJSON(.articleResponse)
         let response = try JSONDecoder().decode(NYTResponse.self, from: data)
         
         XCTAssertFalse(response.results.isEmpty)
@@ -19,12 +19,12 @@ final class NYTResponseTests: XCTestCase {
     }
     
     func test_decode_invalidData_fails() throws {
-        let data = try MockFactory.loadJSON(named: "invalid_structure")
+        let data = try MockFactory.loadJSON(.invalidData)
         XCTAssertThrowsError(try JSONDecoder().decode(NYTResponse.self, from: data))
     }
     
     func test_decode_emptyResults_succeeds() throws {
-        let data = try MockFactory.loadJSON(named: "empty_results")
+        let data = try MockFactory.loadJSON(.emptyResults)
         let response = try JSONDecoder().decode(NYTResponse.self, from: data)
         XCTAssertTrue(response.results.isEmpty)
     }

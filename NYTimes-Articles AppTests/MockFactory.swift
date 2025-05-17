@@ -10,10 +10,10 @@ import Foundation
 
 enum MockFactory {
     
-    static func loadJSON(named name: String) throws -> Data {
+    static func loadJSON(_ file: MockJSONFile) throws -> Data {
         let bundle = Bundle(for: MockFactoryToken.self)
-        guard let url = bundle.url(forResource: name, withExtension: "json") else {
-            throw NSError(domain: "Missing file: \(name).json", code: -1)
+        guard let url = bundle.url(forResource: file.rawValue, withExtension: "json") else {
+            throw NSError(domain: "Missing file: \(file.rawValue).json", code: -1)
         }
         return try Data(contentsOf: url)
     }
