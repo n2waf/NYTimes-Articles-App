@@ -18,7 +18,9 @@ final class ArticleRepositoryImpl: ArticleRepository {
         let endpoint = Endpoint.article(period: period.rawValue)
 
         return client.get(endpoint)
-            .decode(type: NYTResponse.self, decoder: JSONDecoder())
+            .tryMap { data in
+                 try ArticleMapper.map(data)
+             }
             .eraseToAnyPublisher()
     }
 }
