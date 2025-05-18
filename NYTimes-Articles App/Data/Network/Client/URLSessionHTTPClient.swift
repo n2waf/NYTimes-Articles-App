@@ -18,7 +18,7 @@ final class URLSessionHTTPClient: HTTPClient {
         let url = baseURL.appendingPathComponent(endpoint.path)
         
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        components?.queryItems = [URLQueryItem(name: "api-key", value: "claGkGdLLGAnwf5lA834jupJLjjZ8uPJ")]
+        components?.queryItems = [URLQueryItem(name: "api-key", value: Configuration.apiKey)]
         
         guard let finalURL = components?.url else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
