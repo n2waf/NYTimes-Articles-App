@@ -55,8 +55,10 @@ NYTimes-Articles App/
 │   │   ├── Client/
 │   │   │   ├── HTTPClient.swift
 │   │   │   └── URLSessionHTTPClient.swift
-│   │   └── Endpoint/
-│   │       └── Endpoint.swift
+│   │   ├── Endpoint/
+│   │   │   └── Endpoint.swift
+│   │   └── Configuration/
+│   │       └── Configuration.swift
 │   ├── Repository/
 │   │   ├── ArticleRepository.swift
 │   │   └── ArticleRepositoryImpl.swift
